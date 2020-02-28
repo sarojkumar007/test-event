@@ -1,0 +1,51 @@
+@font-face{
+  font-family:'Google';
+  src:url(https://sarojkumar007.github.io/doc/fonts/google-sans-light.woff2);
+  font-style:normal;
+  font-weight:100;
+}
+@font-face{
+  font-family:'Google';
+  src:url(https://sarojkumar007.github.io/doc/fonts/google-sans-bold.woff2);
+  font-style:normal;
+  font-weight:400;
+}
+:root{
+  --color-1: #112d4e;
+  --color-2: #3f72af;
+  --base-color: #f9f7f7;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-family: Google,sans-serif;
+  line-height: 1.5;
+  font-size: 1.7rem;
+  background-color: var(--base-color);
+}
+a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: var(--color-2);
+  transition: color .3s;
+  &:hover,&:focus{
+    color: var(--color-1);
+  }
+}
+
+.disabled{
+    opacity: .4;
+    transform: translateY(0) !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+    &:hover,&:focus{
+        border: 2px solid transparent !important;
+    }
+}

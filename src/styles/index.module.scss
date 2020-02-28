@@ -1,0 +1,30 @@
+.event{
+    border: 3px solid #999;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    &:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+}
+.event-head{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+.btn{
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: var(--color-1);
+    color: #fff;
+    border-radius: .5rem;
+    border: 2px solid var(--color-1);
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem .7rem rgba(0,0,0,.3);
+    &:hover,&:focus{
+        color: #fff;
+        border: 2px solid var(--color-2);
+    }
+    &:active{
+        transform: translateY(0);
+        box-shadow: 0 .3rem .4rem rgba(0,0,0,.1);
+    }
+}
